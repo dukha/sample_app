@@ -1,13 +1,31 @@
 SampleApp::Application.routes.draw do
-  get "pages/home"
+  # leave this for now but remove later as not proper restful
+  get "users/new"
 
-  get "pages/contact"
+  #get "pages/home"
 
-  get "pages/about"
+  #get "pages/contact"
+
+  #get "pages/about"
   
-  get "pages/help"
-
+  #get "pages/help"
+  match '/signup',  :to => 'users#new'
+  
+  match '/contact', :to => 'pages#contact'
+  
+  # Example: The following 2 named routes are created by rails with the match '/about' code below 
+  #about_path => '/about'
+  #about_url  => 'http://localhost:3000/about'
+  match '/about',   :to => 'pages#about'
+  match '/help',    :to => 'pages#help'
+  # match '/', :to => 'pages#home'
+  # replace the above with below
+  # This also gives (behind the scenes
+  # root_path => '/'
+  # root_url  => 'http://localhost:3000/'
   root :to => "pages#home"
+  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

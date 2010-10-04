@@ -1,0 +1,5 @@
+To start autotest
+start notifier 
+$ an-install
+start autotest
+$ autotest

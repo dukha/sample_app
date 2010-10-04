@@ -2,6 +2,7 @@ require 'spec_helper'
 
 describe PagesController do
   # the line below is necessary for th title test to work
+  # It means that not just the pages controller but also the rendering of the views is tested
   render_views
   
    before(:each) do
