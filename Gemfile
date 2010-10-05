@@ -33,6 +33,7 @@ gem 'will_paginate', '3.0.pre2'
 #gem 'spork', '0.8.4'
 group :development do
   gem 'rspec-rails', '2.0.0.beta.22'
+  # note that annotate-models gives an executable file of annotate. There is another gem 'annotate' which seems to do something similar
   gem 'annotate-models', '1.0.4'
   gem 'faker', '0.3.1'
   gem 'webrat'

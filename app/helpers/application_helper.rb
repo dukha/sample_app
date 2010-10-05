@@ -11,5 +11,8 @@ module ApplicationHelper
       "#{base_title} | #{@title}"
     end
   end
-
+  
+  def logo
+    image_tag("logo.png", :alt => "Sample App header image not found", :class => "round")
+  end
 end

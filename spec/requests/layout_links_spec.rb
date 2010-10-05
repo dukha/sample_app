@@ -30,6 +30,22 @@ describe "LayoutLinks" do
     get '/signup'
     response.should have_selector('title', :content => "Sign up")
   end
+  
+  
+  #Check to see that the links go to the right page
+  it "should have the right links on the layout" do
+    visit root_path
+    click_link "About"
+    response.should have_selector('title', :content => @base_title +" | About")
+    click_link "Help"
+    response.should have_selector('title', :content => @base_title +" | Help")
+    click_link "Contact"
+    response.should have_selector('title', :content => @base_title +" | Contact")
+    click_link "Home"
+    response.should have_selector('title', :content => @base_title +" | Home")
+    click_link "Sign up now!"
+    response.should have_selector('title', :content => "Sign up")
+  end
 
 
 end 

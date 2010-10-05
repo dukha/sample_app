@@ -1,4 +1,7 @@
 SampleApp::Application.routes.draw do
+  resources :users
+
+  
   # leave this for now but remove later as not proper restful
   get "users/new"
 
