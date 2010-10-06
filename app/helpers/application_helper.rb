@@ -4,7 +4,7 @@ module ApplicationHelper
   # the @title iv will come from the other half of the mixin (ie PagesController).??
   #The funciton title is then used in the view (actually the application layout)
   def title
-    base_title = "Ruby on Rails Tutorial Sample App"
+    base_title = "Sample Rails"
     if @title.nil?
       base_title
     else

@@ -3,7 +3,8 @@ SampleApp::Application.routes.draw do
 
   
   # leave this for now but remove later as not proper restful
-  get "users/new"
+  # remove now that resources :users is defined
+  #get "users/new"
 
   #get "pages/home"
 
